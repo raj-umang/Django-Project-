@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squares</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Number</th>
+        <th>Square</th>
+      </tr>
+      {% for num, square in squares %}
+      <tr>
+        <td>{{ num }} * {{num}}   =   </td>
+        <td>{{ square }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
