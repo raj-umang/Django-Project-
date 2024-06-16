@@ -72,12 +72,12 @@ WSGI_APPLICATION = 'CLG.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+# https://docs.djangoproject.com/en/5.0/ref/settings/#databases'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangop',
+        'NAME': 'umang',
         'USER': 'root',
         'PASSWORD': 'root@123',
     },
