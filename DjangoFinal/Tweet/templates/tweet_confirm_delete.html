@@ -5,5 +5,11 @@
 {% endblock %}
 
 {% block content %}
-  <h1 class="text-center mt-4">Welcome to My Tweet Django's Project</h1>
+  <h1 class="text-center mt-4">Are you sure that you want to delete the Tweet ? </h1>
+  <form method="post">
+    {% csrf_token %}
+    <button class=" btn btn-danger">Delete</button>
+    <a class="btn-success" href="{% url 'tweet_list' %}">Cancel</a>
+  </form>
+
 {% endblock %}
